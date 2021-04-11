@@ -1,0 +1,6 @@
+1. Different options to choose the build system
+- make, rake, ant, maven
+
+2. Makefile
+- describe how your program should be built
+- is about dependencies and rules

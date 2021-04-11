@@ -1,0 +1,52 @@
+1. Programming language
+- a programmer writes source code in programming language
+
+2. Machine language
+- a PC understands source code in machine language
+
+3. Build process
+- the process of creating executable file from source code
+
+4. Build process in details
+a. Preprocessor
+- a macro processing program that generates intermediate code
+- clean up source code, remove extra lines, remove comments, include the content of header file into the program
+- output file format .ii extension(non-executable)
+
+b. compiler
+- transforms the code from a higher level programming languange to a lower level programming language 
+- there is many options for the compiler, for example GNU compiler collection(GCC)
+- GCC is open source and freely availavble to public
+- GCC takes .ii file as input and generates the assembly code
+- output file format .s extension
+- make sure that the written code has followed all the rules of the using programming language(e.g. syntax checking)
+
+c. assembler
+- trnaslates the assembly code into machine code
+- it takes the assembly code as input and generates the machine code(also known as object code)
+- output file format .obj extension in Windows platform
+- output file format .o extension in Unix platform
+
+d. linker
+- takes the object files generated, link them together, and generates the executable file
+- it links the features of all the external libraries(static libraries and dynamic libraries)
+- for static library the executable file will contain the static library
+- for dynamic librqary the executable file will contain the links to those dynamic libraries
+- output the executable files
+
+e. loader
+- loads the executable file into the main memory which is the RAM so that the CPU can execute the program
+- also loads other libraries which are required by the executable file to run properly
+
+5. Toolchain
+- a bundle of all the required build tools
+- simply write a command to perform all the build process automatically
+- can also perform all these build steps individually
+
+6. GNU toolchain for Windows
+a. mingw
+- it provides minimialist GNU for Windows
+
+b. cygwin
+- it provides Unix-like environment in Windows
+
